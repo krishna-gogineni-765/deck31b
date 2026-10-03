@@ -26,8 +26,10 @@ python -m venv .venv && source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install --index-url https://download.pytorch.org/whl/cu128 torch==2.11.0
 python -m pip install -e .
-deck31b-serve --host 0.0.0.0 --port 8090
+deck31b-serve --port 8090
 ```
+
+The server has no authentication and listens on `127.0.0.1` unless `--host` is set.
 
 `POST /v1/systemone` supports `noul`, `choice`, and `score`. The base weights
 remain under the Gemma Terms of Use. This server code is Apache-2.0.

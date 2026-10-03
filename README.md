@@ -27,9 +27,11 @@ python -m venv .venv && source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install --index-url https://download.pytorch.org/whl/cu128 torch==2.11.0
 python -m pip install -e .
-deck31b-serve --host 0.0.0.0 --port 8090
+deck31b-serve --port 8090
 curl --fail http://127.0.0.1:8090/health
 ```
+
+The server has no authentication and listens on `127.0.0.1` unless `--host` is set.
 
 `POST /v1/systemone` accepts `noul`, `choice`, and `score`. Up to 26 options
 are scored in one pass. Inputs over 16,384 tokens are rejected.
