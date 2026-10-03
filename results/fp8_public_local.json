@@ -1,0 +1,17 @@
+{
+  "note": "Local H100 measurement of the served readout. Not an official JevBench result.",
+  "model": "google/gemma-4-31B-it",
+  "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "quant": "float8_dynamic",
+  "temperature": 3.4,
+  "metrics": {
+    "easy": {"correct": 48, "n": 48, "ece10": 0.002},
+    "original": {"correct": 72, "n": 72, "ece10": 0.005},
+    "hard": {"correct": 95, "n": 111, "ece10": 0.097},
+    "overall": {"correct": 215, "n": 231, "ece10": 0.044}
+  },
+  "latency_p50_s": 1.046,
+  "latency_p95_s": 1.758,
+  "mean_input_tokens": 703.1,
+  "refused": 0
+}

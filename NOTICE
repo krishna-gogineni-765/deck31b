@@ -1,0 +1,13 @@
+deck31b
+Copyright 2026 Krishna Gogineni
+
+This server is licensed under the Apache License, Version 2.0. See LICENSE.
+
+The served checkpoint is google/gemma-4-31B-it, revision
+842da3794eaa0b77d5f08bae87a17459d91ff475, published by Google. Those weights
+are not included in this repository and remain under the Gemma Terms of Use:
+https://ai.google.dev/gemma/terms
+
+The decision prompt and letter readout follow the public Cygnet recipe,
+blockbrain-ai/cygnet-recipe at 81974de878a7385f878be828205c02064f8bc045.
+This repository does not redistribute that project's code.

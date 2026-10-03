@@ -1,0 +1,26 @@
+[project]
+name = "deck31b"
+version = "1.0.0"
+description = "deck31b: TypeSafe decision server for frozen Gemma 4 31B-it."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "torch==2.11.0",
+    "transformers==5.17.0",
+    "torchao==0.18.0",
+    "accelerate==1.15.0",
+    "huggingface-hub==1.32.0",
+    "safetensors==0.8.0",
+    "numpy==2.5.3",
+]
+
+[project.scripts]
+deck31b-serve = "deck31b.serve:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

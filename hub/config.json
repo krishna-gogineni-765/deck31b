@@ -1,0 +1,11 @@
+{
+  "model_name": "deck31b",
+  "base_model": "google/gemma-4-31B-it",
+  "base_revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "quantization": "torchao.Float8DynamicActivationFloat8WeightConfig float8_e4m3fn",
+  "temperature": 3.4,
+  "max_context_tokens": 16384,
+  "max_options": 26,
+  "readout": "cygnet letter mass, full softmax, p^(1/T)",
+  "trained": false
+}
